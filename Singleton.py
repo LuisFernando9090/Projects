@@ -28,11 +28,9 @@ class MySingletonTest(metaclass=MySingleton):
     def get_userPass(self):
         return self._userPass
 
-# Instances
 myTest_1 = MySingletonTest("Sif", 123)
 myTest_2 = MySingletonTest("Luis", 469)
 
-# Check if the are equals
 if myTest_1 == myTest_2:
     print("Error: Login or Password are equals!")
 else:
